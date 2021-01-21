@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    tools:context=".ChatActivity">
+
+    <include
+        android:id="@+id/chat_app_bar"
+        layout="@layout/app_bar_layout" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/message_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="615dp"
+        android:layout_above="@+id/chat_txt_msg"
+        android:layout_below="@+id/chat_app_bar"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/messages_list"
+            android:layout_width="match_parent"
+            android:layout_height="618dp"
+            android:layout_above="@+id/chat_txt_msg"
+            android:layout_below="@+id/chat_app_bar"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ImageButton
+        android:id="@+id/add_icon_btn"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-2dp"
+        android:background="#C5C5C5"
+        android:elevation="3dp"
+        android:padding="10dp"
+        app:srcCompat="@drawable/add_icon" />
+
+    <EditText
+        android:id="@+id/chat_txt_msg"
+        android:layout_width="275dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/add_icon_btn"
+        android:background="#ECEBEB"
+        android:gravity="center_vertical"
+        android:hint="Text Message"
+        android:inputType="text"
+        android:padding="5dp" />
+
+    <ImageButton
+        android:id="@+id/send_icon_btn"
+        android:layout_width="44dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/chat_txt_msg"
+        android:background="#C5C5C5"
+        android:elevation="3dp"
+        android:padding="10dp"
+        app:srcCompat="@drawable/send_icon" />
+
+
+</RelativeLayout>

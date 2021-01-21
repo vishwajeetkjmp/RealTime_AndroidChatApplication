@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "658485473739",
+    "firebase_url": "https://lovers-40f0c.firebaseio.com",
+    "project_id": "lovers-40f0c",
+    "storage_bucket": "lovers-40f0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658485473739:android:30ae5076fc91144e3a464e",
+        "android_client_info": {
+          "package_name": "com.example.lovers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658485473739-n2qktituecvlvflpi30ip31tlrptj3qi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc40Epp6avq-FanQ7rS1ni2FHFk2JyDnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658485473739-n2qktituecvlvflpi30ip31tlrptj3qi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
